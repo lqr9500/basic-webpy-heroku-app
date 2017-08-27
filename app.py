@@ -1,7 +1,4 @@
 #-*-coding:utf-8 -*-
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 import urllib2,time,json,web
 
 
