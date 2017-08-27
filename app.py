@@ -55,6 +55,9 @@ def analyze():
         movies.append(titleandscoredic)
         #movies.append(castsdic)
         #print type(moviesdic)
+    nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    localtime = {'title':'<br><br>%s &emsp; %s'%('更新时间',nowtime)}
+    movies.append(localtime)
     print movies
 
         #test = casts[1]
