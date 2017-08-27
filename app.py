@@ -91,5 +91,5 @@ class hello:
 
 
 if __name__ == "__main__":
-    web.httpserver.runsimple(app.wsgifunc(), ('127.0.0.1', 8080))
+    #web.httpserver.runsimple(app.wsgifunc(), ('127.0.0.1', 8080))
     app.run()
