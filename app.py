@@ -83,7 +83,7 @@ app = web.application(urls, globals())
 class hello:
     def GET(self,name):
         if not name:
-            page = '<br><h1>热映推荐</h1><br><br>'
+            page = '<br><h1>reying</h1><br><br>'
             for m in movies:
                 page += '%s'%m['title']
         web.header('Content-Type','text/html;charset = utf-8')
