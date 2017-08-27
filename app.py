@@ -86,7 +86,8 @@ class hello:
             for m in movies:
                 page += '%s'%m['title']
         web.header('Content-Type','text/html;charset = utf-8')
-        return page
+        localtimes = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        return page,'更新时间 &emsp; %s'%localtimes
 
 
 
