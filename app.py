@@ -55,7 +55,7 @@ def analyze():
         movies.append(titleandscoredic)
         #movies.append(castsdic)
         #print type(moviesdic)
-    nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()+32400))
     localtime = {'title':'<br><br>%s &emsp; %s'%('更新时间',nowtime)}
     movies.append(localtime)
     print movies
@@ -89,8 +89,6 @@ class hello:
             for m in movies:
                 page += '%s'%m['title']
         web.header('Content-Type','text/html;charset = utf-8')
-        localtimes = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()+32400)))
-        page = page + '<br><br>更新时间 &emsp; %s'%localtimes
         return page
 
 
