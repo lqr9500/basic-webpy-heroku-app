@@ -88,7 +88,7 @@ class hello:
             page = '<br><h1>超级聪明大帅逼卢给大傻逼苏的七夕节礼物之电影推荐</h1><br><br>'
             for m in movies:
                 page += '%s'%m['title']
-        web.header('Content-Type','text/html;charset = utf-8')
+        web.header('Content-Type','text/json;charset = utf-8')
         return page
 
 
